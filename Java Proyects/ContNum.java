@@ -13,16 +13,47 @@ import javax.swing.JOptionPane;
  */
 public class ContNum {
     public static void main(String[] args) {
-        double n[];
-        n = new double [5];
-        for (int i = 0; i < 5; i++) {
-            n[i] = Double.parseDouble(JOptionPane.showInputDialog("Ingresa numeros positivos, negativos y ceros al azar"));            
+        double n1, n2, n3, n4, n5 ;
+        n1=Double.parseDouble(JOptionPane.showInputDialog("Ingresa 5 numeros te dire cual es mas grande y cual es mas chico "
+                + "\nIngresa el primer numero"));
+        n2=Double.parseDouble(JOptionPane.showInputDialog("Ingresa 5 numeros te dire cual es mas grande y cual es mas chico "
+                + "\nIngresa el segundo numero"));
+        n3=Double.parseDouble(JOptionPane.showInputDialog("Ingresa 5 numeros te dire cual es mas grande y cual es mas chico "
+                + "\nIngresa el tercer numero"));
+        n4=Double.parseDouble(JOptionPane.showInputDialog("Ingresa 5 numeros te dire cual es mas grande y cual es mas chico "
+                + "\nIngresa el cuarto numero"));
+        n5=Double.parseDouble(JOptionPane.showInputDialog("Ingresa 5 numeros te dire cual es mas grande y cual es mas chico "
+                + "\nIngresa el quinto numero"));
+        //evaluacion de los menores
+        if (n1 < n2 && n1<n3 && n1<n4 && n1<n5) {
+            JOptionPane.showMessageDialog(null, "Es el menor "+n1);
         }
-        for (int i = 0; i < 5; i++) {
-            if (n[i] == 0){
-                
-            }
-            
+        if (n2 < n1 && n2<n3 && n2<n4 && n2<n5) {
+            JOptionPane.showMessageDialog(null, "Es el menor "+n2);
+        }
+        if (n3<n1  && n3<n2 && n3<n4 && n3<n5) {
+            JOptionPane.showMessageDialog(null, "Es el menor "+n3);
+        }
+        if (n4 < n2 && n4<n3 && n4<n1 && n4<n5) {
+            JOptionPane.showMessageDialog(null, "Es el menor "+n4);
+        }
+        if (n5 < n2 && n5<n3 && n5<n4 && n5<n1) {
+            JOptionPane.showMessageDialog(null, "Es el menor "+n5);
+        } // fin de las evalucaciones de los numeros menores         
+        if (n1 > n2 && n1>n3 && n1>n4 && n1>n5) {
+            JOptionPane.showMessageDialog(null, "Es el mayor "+n1);
+        }
+        if (n2 > n1 && n2>n3 && n2>n4 && n2>n5) {
+            JOptionPane.showMessageDialog(null, "Es el mayor "+n2);
+        }
+        if (n3 > n1 && n3>n2 && n3>n4 && n3>n5) {
+            JOptionPane.showMessageDialog(null, "Es el mayor "+n3);
+        }
+        if (n4 > n2 && n4>n3 && n4>n1 && n4>n5) {
+            JOptionPane.showMessageDialog(null, "Es el mayor "+n4);
+        }
+        if (n5 > n2 && n5>n3 && n5>n4 && n5>n1) {
+            JOptionPane.showMessageDialog(null, "Es el mayor "+n5);
         }
     }
     
