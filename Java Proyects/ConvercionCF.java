@@ -12,13 +12,12 @@ import javax.swing.JOptionPane;
  * @author luisj
  */
 public class ConvercionCF {
-    public static void main(String[] args) {
-        String centigrados_st; 
+    public static void main(String[] args) { 
         double centigrados, faren;
-        centigrados_st = JOptionPane.showInputDialog("Vamos a convertir Grados Centigrados a Fahrenheit.\n Ingresa los datos en Centigrados.");
-        centigrados = Double.parseDouble(centigrados_st);
+        centigrados = Double.parseDouble(JOptionPane.showInputDialog("Vamos a convertir Grados Centigrados a Fahrenheit.\n "
+                + "Ingresa los datos en Centigrados."));
         faren = (32+(9*centigrados/5));
-        
-        JOptionPane.showMessageDialog(null, "Grados Fahrenheit. " + (String.format("%.2f", faren)) + "\nGrados centigrados. " + String.format("%.2f", centigrados));
+        JOptionPane.showMessageDialog(null, "Grados Fahrenheit. " + (String.format("%.2f", faren)) + 
+                "\nGrados centigrados. " + String.format("%.2f", centigrados));
     }
 }

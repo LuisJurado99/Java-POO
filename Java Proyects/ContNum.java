@@ -11,19 +11,19 @@ import javax.swing.JOptionPane;
  *
  * @author luisj
  */
-public class NumerosEnteros {
+public class ContNum {
     public static void main(String[] args) {
-        int temp=0;
-        double numeros[];
-        numeros= new double [5];
+        double n[];
+        n = new double [5];
         for (int i = 0; i < 5; i++) {
-            numeros[i] = Double.parseDouble(JOptionPane.showInputDialog("Ingresa el numero: " + (i+1) ));
+            n[i] = Double.parseDouble(JOptionPane.showInputDialog("Ingresa numeros positivos, negativos y ceros al azar"));            
         }
         for (int i = 0; i < 5; i++) {
-            if (numeros[i]%1 == 0) {
-                temp++;
-            }            
+            if (n[i] == 0){
+                
+            }
+            
         }
-        JOptionPane.showMessageDialog(null, "El total de numeros enteros es de: " + temp);
     }
+    
 }

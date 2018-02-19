@@ -1,4 +1,3 @@
-
 import javax.swing.JOptionPane;
 
 /*
@@ -13,7 +12,7 @@ import javax.swing.JOptionPane;
  */
 public class EcSegundoGrado {
     public static void main(String[] args) {
-        double a,b,c,x1,x2, potencia, raiz, raiz2;
+        double a,b,c,x1,x2, potencia, raiz;
         a=Double.parseDouble(JOptionPane.showInputDialog("Ingresa A"));
         b=Double.parseDouble(JOptionPane.showInputDialog("Ingresa B"));
         c=Double.parseDouble(JOptionPane.showInputDialog("Ingresa C"));

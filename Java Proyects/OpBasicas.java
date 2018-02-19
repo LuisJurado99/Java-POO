@@ -8,19 +8,15 @@
  *
  * @author anmijurane
  */
-/*import java.util.Scanner;*/
 import javax.swing.JOptionPane;
 public class OpBasicas {
-    public static void main(String[] args) {
-        String numero1_st,numero2_st; //variables string por cuadro de dialogos
+    public static void main(String[] args) {        
         double numero1, numero2, division; // variables para las operaciones logicas
-        numero1_st= JOptionPane.showInputDialog("Que numero deseas sumar");
-        numero2_st= JOptionPane.showInputDialog("Ingresa el otro numero");
-        numero1 = Double.parseDouble(numero1_st);
-        numero2 = Double.parseDouble(numero2_st);
+        numero1= Double.parseDouble(JOptionPane.showInputDialog("Te ayudo a hacer las operaciones basicas de dos numeros\n "
+                + "Ingresa el primer numero"));
+        numero2= Double.parseDouble(JOptionPane.showInputDialog("Ingresa el otro numero"));
         division=(numero1/numero2);
-        JOptionPane.showMessageDialog(null, "La suma es igual a: "+ (numero1 + numero2) + "\nEl producto de los dos numeros es: "+ (numero1 * numero2) + 
+        JOptionPane.showMessageDialog(null,"Ingresaste estos numeros: "+numero1+" y "+numero2+ "\nLa suma es igual a: "+ (numero1 + numero2) + "\nEl producto de los dos numeros es: "+ (numero1 * numero2) + 
                 "\nLa diferencia de los dos numeros es: "+ (numero1 - numero2) + "\nEl cociente de los dos numeros es:"+ String.format("%.2f",division));
-    }
-    
+    } 
 }

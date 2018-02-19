@@ -13,13 +13,10 @@ import javax.swing.JOptionPane;
  */
 public class Multiplo {
     public static void main(String[] args) {
-        String numero_st, numero2_st;
         int numero, numero2;
-            numero_st = JOptionPane.showInputDialog("Veamos que numeros son multiplos.\n Ingresa el primer numero. ");
-        numero2_st = JOptionPane.showInputDialog("Ingresa el segundo numero.");
-        numero = Integer.parseInt(numero_st);
-        numero2 = Integer.parseInt(numero2_st);
-        JOptionPane.showMessageDialog(null, numero+"*"+numero2 + (numero%numero2==0 ? "\nSon multiplos" : "\nNo son multiplos" ));
+        numero = Integer.parseInt(JOptionPane.showInputDialog("Veamos que numeros son multiplos.\n Ingresa el primer numero. "));
+        numero2= Integer.parseInt(JOptionPane.showInputDialog("Ingresa el segundo numero."));                
+        JOptionPane.showMessageDialog(null, numero+" y "+numero2 + (numero%numero2==0 ? "\nSon multiplos" : "\nNo son multiplos" ));
     }
     
 }

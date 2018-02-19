@@ -13,10 +13,8 @@ import javax.swing.JOptionPane;
 public class RadioCircunferencia {
     public static void main(String[] args) {
         double PI = Math.PI;
-        String radio_st;
         double radio, diametro, area, perimetro;
-        radio_st= JOptionPane.showInputDialog("Sacemos el area de un circulo");
-        radio= Double.parseDouble(radio_st) ;
+        radio= Double.parseDouble(JOptionPane.showInputDialog("Sacemos el area de un circulo \n Ingresa el radio."));
         diametro= (2*radio);
         perimetro =  (2*radio)*PI;
         area = (PI*(radio*radio));
